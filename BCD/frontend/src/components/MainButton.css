@@ -1,0 +1,25 @@
+.main-login-button {
+    display: flex;
+    width: fit-content;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: none;
+
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+}
+
+.main-login-button:hover {
+    background-color: white;
+    color: black;
+}

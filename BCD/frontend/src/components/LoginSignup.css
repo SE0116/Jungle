@@ -1,0 +1,24 @@
+.login-signup-container {
+  height: 100vh;
+  background-image: url("./content/background.jpg");
+  background-size: cover;
+}
+
+.login-signup {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* 초기에는 투명하게 설정 */
+  transition: opacity 0.5s ease-in-out; /* 페이드 인/아웃 효과를 위한 트랜지션 */
+}
+
+/* 페이드 인 애니메이션 클래스 */
+.login-signup.show {
+  opacity: 1;
+}
+
+/* 페이드 인 애니메이션 클래스 */
+.login-signup.hide {
+  opacity: 0;
+}

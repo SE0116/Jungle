@@ -1,0 +1,16 @@
+.photo-grid {
+    display: flex;
+    justify-content: center; /* 가로축 중앙 정렬 */
+    align-items: center; /* 세로축 중앙 정렬 */
+    flex-wrap: wrap; /* 컨텐츠가 넘치면 다음 줄로 이동 */
+    gap: 30px; /* Thumbnail 간격 조정 */
+    padding: 50px; /* 컨테이너 내부 여백 추가 */
+  }
+  
+  .thumbnailGroup img {
+    width: 150px; /* 이미지 크기 조정 */
+    height: 150px; /* 이미지 크기 조정 */
+    border-radius: 50%; /* 이미지를 동그랗게 */
+    object-fit: cover; /* 이미지 비율 유지하며 채우기 */
+  }
+  

@@ -1,0 +1,35 @@
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .page-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .page-header {
+    font-size: 30px !important;
+    margin-bottom: 20px;
+  }
+  
+  .page-text {
+    font-size: 40px !important; /* 텍스트 크기 조절 */
+    color: #333; /* 텍스트 색상 설정, 필요에 따라 조절 가능 */
+    margin: 10px 0; /* 텍스트 주변 여백 조절 */
+  }
+  
+  .page-footer {
+    margin-top: 20px;
+  }
+  
+  .page-image {
+    width: 100%; /* 이미지 너비를 페이지 너비에 맞춤 */
+    height: 200px; /* 이미지 높이, 필요에 따라 조절 가능 */
+    background-color: #f0f0f0; /* 이미지 대신 보여줄 배경 색상, 실제 이미지 사용 시 제거 */
+    margin-bottom: 20px; /* 이미지 아래 여백 */
+  }
+  

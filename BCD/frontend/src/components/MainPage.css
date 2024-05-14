@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("./content/background.jpg");
+    background-size: cover;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20vh auto 0;
+}
+
+.title{
+    color: white;
+    font-family: 'Cafe24Shiningstar', serif;
+    font-size: 15rem;
+    font-weight: 900;
+}
+
+.subTitle{
+    color: white;
+    font-family: 'Cafe24Shiningstar', serif;
+    font-size: 4.5rem;
+    font-weight: 500;
+}

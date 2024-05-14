@@ -1,0 +1,25 @@
+/* App.css 또는 해당 컴포넌트의 스타일시트 파일에 추가 */
+.select-container {
+  display: flex;
+  flex-direction: column; /* Navbar와 버튼 그룹을 수직으로 쌓기 */
+  justify-content: center; /* 수직 중앙 정렬 */
+  align-items: center; /* 수평 중앙 정렬 */
+  height: 100vh; /* 전체 뷰포트 높이 */
+  background-image: url("./content/background.jpg");
+  background-size: cover;
+}
+
+.select-button-group {
+  display: flex;
+  flex-direction: row; /* 버튼을 수평으로 배열 */
+  align-items: center; /* 수평 중앙 정렬 */
+  gap: 20px; /* 버튼 사이의 간격 */
+}
+
+.select-button {
+  padding: 30px 50px;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+  

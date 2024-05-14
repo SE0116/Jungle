@@ -1,0 +1,35 @@
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-input {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.button {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.confirm-button {
+    margin: 10px auto 0;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+

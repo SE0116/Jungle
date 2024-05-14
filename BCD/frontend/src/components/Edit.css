@@ -1,0 +1,222 @@
+.main-container {
+  height: 100vh;
+  background-image: url("./content/background.jpg");
+  background-size: cover;
+}
+
+.content-title {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 10px;
+}
+
+.temp {
+  height: 58px;
+}
+
+.image-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.edit-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-container {
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.image-container-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.selected-image {
+  width: 800px;
+  height: 700px;
+  object-fit: contain; /* 이미지 비율을 유지하면서 컨테이너에 맞춤 */
+  background: white;
+  border-radius: 5px;
+}
+
+.removed-image-container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.removed-image-list {
+  background-color: #F5EFF5;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column; /* 컨테이너 내 요소를 세로로 나열 */
+  align-items: center; /* 이미지들을 중앙 정렬 */
+  gap: 10px; /* 이미지 사이의 간격 조정 */
+  min-width: 200px;
+  height: 700px;
+  overflow-y: auto;
+}
+
+.removed-image {
+  width: 100px;
+  height: 100px;
+}
+
+.overlay-image {
+  object-fit: contain; /* 이미지 비율을 유지하면서 컨테이너에 맞춤 */
+  z-index: 500;
+}
+.overlay-image img {
+  pointer-events: none; /* 기본적으로 오버레이 이미지에 대한 포인터 이벤트 무시 */
+}
+  
+
+.react-resizable-handle {
+  background-color: #ff5722; /* 눈에 띄는 오렌지 색상 */
+  width: 10px; /* 기본 크기보다 크게 설정 */
+  height: 10px; /* 기본 크기보다 크게 설정 */
+  border: 2px solid #fff; /* 흰색 테두리 추가 */
+}
+
+.react-resizable-handle-se {
+  bottom: -5px;
+  right: -5px;
+  cursor: se-resize; /* 남동쪽(resize) 커서 아이콘 사용 */
+}
+
+.image-container-list {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 80%;
+  margin-right: 30px;
+}
+
+.image-list {
+  /* background-color: lightgreen; */
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* 이미지 사이의 간격을 균등하게 조정 */
+  align-items: flex-start; /* 각 행의 시작점을 기준으로 정렬 */
+  width: 100%;
+  height: 700px;
+  overflow: auto;
+}
+
+/* 스크롤바의 전체 부분을 숨깁니다 (트랙 포함) */
+.image-list::-webkit-scrollbar {
+  width: 5px; /* 스크롤바의 너비 */
+}
+
+/* 스크롤바 트랙 부분을 숨깁니다 */
+.image-list::-webkit-scrollbar-track {
+  background: transparent; /* 트랙 부분 배경 투명 */
+}
+
+.image-list::-webkit-scrollbar-thumb {
+  background: transparent; /* 초기에는 스크롤바를 투명하게 설정 */
+  border-radius: 6px; /* 모서리를 둥글게 */
+}
+
+.image-list.scrolling::-webkit-scrollbar-thumb {
+  background: #888; /* 스크롤 중에는 스크롤바를 보이게 설정 */
+}
+
+.image-list.scrolling::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.selected {
+  border: 3px solid blue; /* 선택된 이미지를 표시하기 위한 테두리 */
+}
+
+.image-checkbox {
+  display: flex;
+  /* justify-content: center; 이미지를 가운데 정렬 */
+  align-items: center; /* 세로 방향 가운데 정렬 */
+  width: calc(50% - 20px); /* 전체 너비의 50%에서 양쪽 마진을 뺀 값 */
+  height: 200px;
+  margin: 10px; /* 상하좌우 마진 추가 */
+}
+
+.image-element {
+  width: 100%; /* 부모 컨테이너 너비에 맞춤 */
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.edit-container {
+  max-width: 100%;
+  height: 80%;
+  margin-right: 30px;
+}
+
+.modal-backdrop {
+  position: fixed; /* 화면에 고정 */
+  top: 0;
+  left: 0;
+  width: 100%; /* 전체 너비 */
+  height: 100%; /* 전체 높이 */
+  background-color: rgba(0, 0, 0, 0.5); /* 반투명 검정색 배경 */
+  display: flex; /* flexbox를 사용하여 자식 요소를 중앙에 배치 */
+  justify-content: center; /* 가로 방향에서 중앙 정렬 */
+  align-items: center; /* 세로 방향에서 중앙 정렬 */
+  z-index: 1000; /* 다른 요소들 위에 보이도록 z-index 설정 */
+}
+
+.modal-content {
+  width: 60%; /* 콘텐츠 너비, 필요에 따라 조절 */
+  padding: 20px; /* 내부 여백 */
+  background-color: #fff; /* 배경색 */
+  border-radius: 8px; /* 모서리 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.progress-bar {
+  width: 100%; /* 프로그레스 바 너비를 부모 요소에 맞춤 */
+  height: 20px; /* 프로그레스 바 높이 */
+  background-color: #f0f0f0; /* 프로그레스 바 배경색 */
+  border: 1px solid #ddd; /* 프로그레스 바 테두리 */
+  border-radius: 5px; /* 프로그레스 바 모서리 둥글게 */
+}
+
+/* 프로그레스 바 내부 채우기 스타일 (HTML 기본 <progress> 태그 사용 시 필요 없음) */
+.progress-bar-fill {
+  height: 100%; /* 채우기 높이를 부모 요소에 맞춤 */
+  background-color: #007bff; /* 채우기 색상 */
+  border-radius: 5px; /* 채우기 모서리 둥글게 */
+  transition: width 0.5s ease-in-out; /* 너비 변경시 애니메이션 효과 */
+}
+
+
+/* 반응형 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+  .image-container {
+    width: 95%;
+  }
+
+  .image-list {
+    /* 태블릿 크기에 맞게 스타일 변경 */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-container {
+    width: 100%;
+  }
+
+  .image-list {
+    /* 모바일 크기에 맞게 스타일 변경 */
+  }
+}
+

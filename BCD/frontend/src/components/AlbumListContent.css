@@ -1,0 +1,44 @@
+.page-cover2 {
+    width: 500px;
+    height: 600px;
+    background-color: #e3d0b5;
+    display: flex;
+    flex-direction: column; /* 컨텐츠를 세로로 정렬 */
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #b89f85;
+    border-radius: 5px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease; /* 박스 쉐도우 전환 효과 추가 */
+    overflow: hidden; /* 이미지 확대 시 넘치는 부분 숨김 */
+  }
+  
+  .page-cover2:hover .cover-image {
+    transform: scale(1.67); /* 이미지를 2/3 크기로 확대 */
+  }
+  
+  .page-cover2:hover .title-container {
+    transform: translateY(100%); /* 텍스트를 아래로 이동 */
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 100%; /* 이미지 컨테이너의 높이를 2/3로 설정 */
+    overflow: hidden; /* 이미지 확대 시 넘치는 부분 숨김 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cover-image {
+    width: 90%; /* 이미지의 너비를 줄입니다 */
+    height: auto; /* 이미지의 높이를 자동으로 조절합니다 */
+    transition: transform 0.5s ease; /* 이미지 확대/축소에 애니메이션 효과 적용 */
+  }
+  
+  .title-container {
+    transition: transform 0.5s ease; /* 텍스트 이동에 애니메이션 효과 적용 */
+  }
+  

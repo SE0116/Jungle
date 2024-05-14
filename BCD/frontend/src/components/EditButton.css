@@ -1,0 +1,14 @@
+.edit-button {
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: black;
+    border-radius: 5px;
+    border-color: goldenrod;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
